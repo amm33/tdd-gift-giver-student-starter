@@ -7,14 +7,14 @@ class ExpressError extends Error {
 }
 
 class BadRequestError extends ExpressError {
-  constructor(message = "Bad Request") {
+  constructor(message = "Bad request") {
     super(message, 400);
   }
 }
 
 class NotFoundError extends ExpressError {
-  constructor(message = "Not Found") {
-    super(message, 400);
+  constructor(message = "Not found") {
+    super(message, 404);
   }
 }
 
